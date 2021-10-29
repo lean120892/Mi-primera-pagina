@@ -1,0 +1,39 @@
+
+
+body{
+
+
+    /*---- Fondo de página-----*/
+    background-color: rgba(193, 205, 213,1); 
+    margin: 0;
+    padding: 3px;
+
+
+    /* ---- Imagen de fondo*/
+    background-image: url(/MiPaginaWeb/Static/Imagenes/Fondo\ circuito.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:right;
+   
+}
+.contenedor-formulario{
+    margin-top: 70px;
+    padding: auto;
+   
+    
+ 
+}
+.datos-registro{
+    background-color:rgba(94, 190, 207, 0.3);
+    backdrop-filter: blur(5px);
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.formOk{
+    
+    border: solid 3px;
+    
+    
+}

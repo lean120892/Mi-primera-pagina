@@ -1,0 +1,332 @@
+body{
+
+
+    /*---- Fondo de página-----*/
+
+    background-color: rgba(193, 205, 213,1); 
+    
+    margin: 0;
+    padding: 3px;
+  
+
+
+    /* ---- Imagen de fondo*/
+    background-image: url(/MiPaginaWeb/Static/Imagenes/Fondo\ circuito.png);
+    
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: right;
+
+   
+}
+
+.cuerpoprincipal{
+
+    width: auto;
+    height: auto;
+    margin: 3px;
+    padding: auto;
+   
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.contenedor{
+    width: 75%;
+    height: auto;
+    margin: 3px;
+    padding: auto;
+    padding-left: 50px;
+    
+}
+
+    .card{
+        width: 500px;
+        height: 200px;
+        margin-left: 10px;
+        margin-top: 30px;
+        padding: auto;
+        border-right: 2.5px solid rgb(144, 82, 163); 
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        
+        -webkit-box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+        -moz-box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+        box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+        
+    }
+        .card a{
+            color: darkslateblue;
+            font-size: 35px;
+            position: relative;
+            right:15px;
+            bottom: 3px;       
+         }
+        .imgcard{
+            width: 150px;
+            height: 150px;
+           
+            border-radius: 50%;
+            margin: 3px;
+            
+        }
+            .imgcard img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+        
+            }
+
+        .contenido{
+            width: 300px;
+            height: 200px;
+            /*border: 1px solid #000; */
+            font-family: 'Rubik', sans-serif;
+            text-align: center center;
+            padding-top: 60px;
+            
+
+        }
+            .contenido h3{
+                font-family: 'Rubik', sans-serif;
+                font-size: 45px;
+                color: azure;
+                text-align: center center;
+                position: absolute;
+                
+            }
+
+.aside{
+    width: 25%;
+    height: auto;
+    margin: 3px;
+    
+    padding: auto;
+    padding-top: 10px;
+  
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+    .aside1{
+        width: auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        .aside1 h3{
+            color: seashell;
+            text-align: center center;
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+
+        .video{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height:auto !important;
+            padding-top: 15px;
+           
+        }
+            .aside1 iframe{
+                margin-top: 10px;
+                object-fit: cover;
+                width: 100%;
+                height:300px !important;
+                border-left: 2.5px solid rgb(144, 82, 163);
+            }
+
+     .aside2{
+        padding-top: 20px;
+        width: auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }   
+
+            .mapa{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .aside2 h3{
+                color: seashell;
+                text-align: center center;
+                font-size: 30px;
+                padding-bottom: 15px;
+            }
+            .aside2 iframe{
+                    margin-top: 10px;
+                    object-fit: cover;
+                    width: 100%;
+                    height:300px !important;
+                    border-left: 2.5px solid rgb(144, 82, 163);
+            }
+            
+
+
+
+
+
+
+
+
+        /* Diseño adaptativo   */
+
+        @media screen  and (max-width: 1026px) {
+
+            .cuerpoprincipal{
+
+                width: auto;
+                height: auto;
+                margin: 3px;
+                padding: auto;
+               
+                overflow: hidden;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .contenedor{
+                width: 100%;
+                height: auto;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                
+                
+            }
+
+            .aside{
+                width: 100%;
+                /*border: 1px solid #000;*/
+               
+            }
+            .video{
+                overflow: hidden;
+                width: 100% !important;
+                height: auto !important;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+              
+               
+               
+            }
+            .video iframe{
+                margin-top: 10px;
+                margin-left: 10px;
+                object-fit: cover;
+                width: 50% !important;
+                height:300px !important;
+                border-left: 3px solid rgb(144, 82, 163);
+             }
+             .mapa{
+                 display: flex;
+                 justify-content: center;
+                 align-content: center;
+                 align-items: center;
+                  
+             }
+             .mapa iframe{
+                margin-top: 10px;
+                object-fit: cover;
+                width: 50%;
+                height:300px !important;
+                border-left: 2.5px solid rgb(144, 82, 163);
+                
+        }
+           
+
+         
+            
+        }
+
+
+        @media screen  and (max-width: 640px) {
+
+            .card{
+                width: 400px;
+                height: 200px;
+                margin-left: 10px;
+                margin-top: 30px;
+                padding: auto;
+                border-right: 2.5px solid rgb(144, 82, 163); 
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                align-items: center;
+                justify-content: space-around;
+                position: relative;
+                
+                -webkit-box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+                -moz-box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+                box-shadow: 36px 21px 19px 14px rgba(135,130,135,0.62);
+                
+            }
+            .imgcard{
+                width: 100px;
+                height: 100px;
+               
+                border-radius: 50%;
+                margin: 3px;
+                
+            }
+
+            .contenido h3{
+                font-family: 'Rubik', sans-serif;
+                font-size: 30px;
+                color: azure;
+                text-align: center center;
+                position: absolute;
+                
+            }
+
+            .video{
+                overflow: hidden;
+                width: 100% !important;
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+              
+               
+               
+            }
+
+            .video iframe{
+                margin-top: 10px;
+                margin-left: 10px;
+                object-fit: cover;
+                width: 80% !important;
+                height:300px !important;
+                border-left: 3px solid rgb(144, 82, 163);
+             }
+
+        }
